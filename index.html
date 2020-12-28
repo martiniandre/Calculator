@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="display-numbers">
+                <input type="text" readonly class="save-value">
+                <input type="text" readonly>
+            </div>
+            <div class="button-display">
+                <div class="line">
+                    <button class="btn action" onClick="clearValue()">C</button>
+                    <button class="btn action"></button>
+                    <button class="btn action" onClick="setOperation('/')">/</button>
+                    <button class="btn action" onClick="Backspace()">del</button>
+                </div>
+                <div class="line">
+                    <button class="btn number" value="7" onclick="setValue(7)">7</button>
+                    <button class="btn number" value="8" onclick="setValue(8)">8</button>
+                    <button class="btn number" value="9" onclick="setValue(9)">9</button>
+                    <button class="btn action" onClick="setOperation('*')">x</button>
+                </div>
+                <div class="line">
+                    <button class="btn number" value="4" onclick="setValue(4)">4</button>
+                    <button class="btn number" value="5" onclick="setValue(5)">5</button>
+                    <button class="btn number" value="6" onclick="setValue(6)">6</button>
+                    <button class="btn action" onClick="setOperation('-')">-</button>
+                </div>
+                <div class="line">
+                    <button class="btn number" value="1" onclick="setValue(1)">1</button>
+                    <button class="btn number" value="2" onclick="setValue(2)">2</button>
+                    <button class="btn number" value="3" onclick="setValue(3)">3</button>
+                    <button class="btn action" onClick="setOperation('+')">+</button>
+                </div>
+                <div class="line">
+                    <button class="btn number zero" value="0" onclick="setValue(0)">0</button>
+                    <button class="btn dot" onclick="setValue('.')">.</button>
+                    <button class="btn equals" onClick="getResult()"> = </button>
+                </div>
+        </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
